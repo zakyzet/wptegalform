@@ -1,0 +1,184 @@
+/* Frontend Class */
+.form-rendered {
+  padding: 8.857rem 1.714rem;
+  background: #F1F5F9;
+  min-height: 100vh;
+}
+
+.form-rendered .content {
+  max-width: 448px;
+  margin: 0 auto;
+  padding: 24px;
+  background: #FFFFFF;
+  border-radius: 6px;
+  border: 1px solid #e2e2e2;
+  /* box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 4px 0px rgba(0, 0, 0, 0.14); */
+}
+
+.form-rendered .rendered-form h1 {
+  margin: 0;
+  margin-bottom: 16px;
+  font-style: 32px;
+  line-height: 1.5em;
+  font-weight: 600;
+  color: #232933;
+}
+
+.form-rendered .powered-by {
+  max-width: 448px;
+  margin: 32px auto 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.form-rendered .powered-by span {
+  display: block;
+  color: #8b95a5;
+  /* Label small/Regular */
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 133.333% */
+  text-align: right;
+  margin-bottom: 8px;
+}
+.form-rendered .powered-by img,
+.form-rendered .powered-by svg {
+  height: 32px;
+  width: auto;
+}
+
+.form-rendered .rendered-form .form-control {
+}
+
+.btn {
+  padding: 8px 16px;
+  font-size: 14px;
+  line-height: 20px;
+}
+.btn:focus,
+.btn:hover,
+.btn:visited {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.btn.btn-primary {
+  font-family: "Inter", sans-serif;
+  outline: 0;
+  background: #f7601a;
+  border: 0;
+  padding: 8px 12px;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 20px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+.btn.btn-primary:hover {
+  background: #e33600;
+  border-color: #e33600;
+}
+
+.btn-success.btn {
+  background: #f7601a;
+  border-color: #f7601a;
+}
+.btn-success.btn:hover {
+  background: #e33600;
+  border-color: #e33600;
+}
+
+
+.form-wrap.form-builder .frmb .prev-holder select.form-control,
+.form-group select.form-control{
+  -moz-appearance: none; /* Firefox */
+  -webkit-appearance: none; /* Safari and Chrome */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: relative;
+  background-color: #FFF;
+  background-image: url(../assets/ic-carret-down.svg);
+  background-repeat: no-repeat;
+  background-position: calc(100% - 8px) center;
+  background-size: 20px;
+  padding-right: 12px;
+}
+
+.bootstrap-select.form-control button:focus{
+  outline: none !important;
+  box-shadow: none !important;
+  background-color: #f7f7f7;
+  border-color: #f7f7f7;
+}
+.bootstrap-select.form-control button:hover{
+  background-color: #f7f7f7;
+}
+
+
+.bootstrap-select.form-control .bs-caret .caret{
+  width: 16px;
+  height: 16px;
+  border: 0;
+  background-image: url(../assets/ic-carret-down.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: -6px;
+}
+
+
+.form-rendered input[type=checkbox], 
+.form-rendered  input[type=radio]{
+  margin: 0;
+  line-height: 0;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+}
+.form-rendered label input[type=checkbox]{
+  margin-left: -20px;
+}
+
+.form-rendered label input[type=checkbox]{
+  margin-bottom: 0px;
+}
+
+
+.checkbox label input, .radio label input{
+  padding-right: 8px;
+}
+
+.checkbox label{
+  padding-left: 24px;
+}
+
+.checkbox label input[type="checkbox"]{
+  margin-top: 2px;
+}
+
+.checkbox label input[type="radio"]{
+  margin-left: -24px;
+  margin-top: -3px;
+  margin-right: 4px;
+}
+
+@media (max-width: 767px){
+ .form-rendered{
+ 	padding: 20px 0;
+ }
+ .form-rendered .container{
+ 	padding-left: 12px;
+    padding-right: 12px;
+ }
+ .form-rendered .content{
+  	padding-left: 12px;
+  	padding-right: 12px;
+  }
+}
